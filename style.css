@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('./MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MonumentExtended' !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#upload {
+    margin-bottom: 20px;
+}
+
+.preview-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Tamanho máximo do container */
+    height: auto;
+    aspect-ratio: 1; /* Para manter a proporção de 1:1 */
+    padding: 4px;
+    border: 3px dashed #ffffff;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#upload-label {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; /* Tamanho máximo do botão */
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Efeito ao passar o mouse */
+#upload-label:hover {
+    background-color: #e9e9e9;
+}
+
+/* Esconder o input de upload padrão */
+#upload {
+    display: none;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #ff4d4d;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Quando a mensagem de erro for exibida */
+#error-message {
+    display: block;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+    #upload-label {
+        font-size: 16px;
+        padding: 12px;
+        max-width: 100%; /* O botão ocupa a largura completa em telas menores */
+    }
+
+    .preview-container {
+        max-width: 300px;
+    }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    #upload-label {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .preview-container {
+        max-width: 250px;
+    }
+}
