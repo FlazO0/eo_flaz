@@ -19,10 +19,11 @@
 .heart {
     position: relative;
     width: 200px;
-    height: 180px;
+    height: 200px;
     background-color: #FF5A5F;
     margin-bottom: 20px;
     transform: rotate(-45deg);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +37,15 @@
     height: 200px;
     background-color: #FF5A5F;
     border-radius: 50%;
+}
+
+.heart::before {
     top: -100px;
     left: 0;
 }
 
 .heart::after {
-    left: auto;
+    top: -100px;
     right: 0;
 }
 
@@ -53,6 +57,7 @@
     font-weight: bold;
     z-index: 2;
 }
+
 
     </style>
 </head>
