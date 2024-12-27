@@ -56,6 +56,19 @@
                 document.getElementById('feedback').innerText = 'Falha ao copiar o e-mail.';
             });
         }
+        
+        // Array com várias cores
+        const cores = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#9B59B6", "#E74C3C", "#1ABC9C"];
+        
+        // Função para escolher uma cor aleatória do array
+        function escolherCorAleatoria() {
+          const indiceAleatorio = Math.floor(Math.random() * cores.length); // Escolhe um índice aleatório
+          return cores[indiceAleatorio]; // Retorna a cor correspondente ao índice
+        }
+    
+        // Aplica a cor escolhida ao fundo da página
+        document.body.style.backgroundColor = escolherCorAleatoria();
+
     </script>
 </body>
 </html>
