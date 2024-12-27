@@ -14,7 +14,7 @@
 
 body {
     font-family: 'MonumentExtended' !important;
-    background-color: #395959c2;
+    transition: background-color 1s ease; /* Efeito suave para a transição da cor */
     color: #1b1b1b;
     display: flex;
     justify-content: center;
