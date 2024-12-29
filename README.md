@@ -16,4 +16,3 @@ Este projeto é uma página simples de links, criada para ajudar artistas a reun
 ## Contato  
 Se tiver dúvidas ou sugestões, entre em contato:  
 - **E-mail:** flazo0@proton.me
-```  
