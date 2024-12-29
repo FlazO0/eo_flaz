@@ -18,7 +18,6 @@ body {
     color: #1b1b1b;
     display: flex;
     min-height: 100vh;
-    width: 80%;
 }
 
 /* Estilos para telas maiores (PCs) */
