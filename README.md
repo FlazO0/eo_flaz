@@ -1,4 +1,4 @@
-# Página de Links - Portfólio de Artista  
+# Página de Links - Portfólio de Artistas
 
 ## Descrição  
 Este projeto é uma página simples de links, criada para ajudar artistas a reunir e compartilhar seus principais conteúdos em um único lugar. Com um design minimalista e responsivo, a página permite que visitantes acessem rapidamente redes sociais, portfólio, loja online, e outros links relevantes.  
