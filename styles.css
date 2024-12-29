@@ -21,21 +21,12 @@ body {
     width: 80%;
 }
 
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
+/* Estilos para telas maiores (PCs) */
+@media (min-width: 769px) {
     body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-}
-
-/* Estilos para telas maiores (PCs) */
-@media (min-width: 769px) {
-    body {
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row;
     }
 }
 
